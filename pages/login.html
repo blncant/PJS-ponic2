@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Log In</title>
+		<link rel="stylesheet" href="../css/login.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<nav class="navbar">
+				<a href="../index.html">
+					<img src="../assets/img/logo.png" alt="Logo Ponic" class="navbar__logo" />
+				</a>
+			</nav>
+		</header>
+		<main class="main">
+			<form class="form__container" id="form">
+				<h1 class="form__title">Bienvenido</h1>
+				<div class="form__field">
+					<input
+						type="email"
+						placeholder="Email"
+						class="form__input"
+						id="email"
+						autocomplete="off"
+						required
+					/>
+					<small></small>
+				</div>
+				<div class="form__field">
+					<input
+						type="password"
+						placeholder="Password"
+						class="form__input"
+						id="password"
+						autocomplete="off"
+						required
+					/>
+					<small></small>
+				</div>
+
+				<input type="submit" class="btn btn--submit form__submit" value="Log In" />
+
+				<div class="sign">
+					<p>No tenés una cuenta?</p>
+					<a class="sign__link" href="./register.html">Registrate</a>
+				</div>
+			</form>
+		</main>
+		<footer class="footer">
+			<ul class="footer__nav">
+				<li><a class="footer__link" href="#">Términos de Uso</a></li>
+				<li><a class="footer__link" href="#">Políticas de Privacidad</a></li>
+				<li><a class="footer__link" href="#">Soporte</a></li>
+			</ul>
+		</footer>
+		<!-- <script src="/js/index.js"></script> -->
+	</body>
+</html>
