@@ -498,9 +498,12 @@ main {
 	display: flex;
 	flex-direction: column;
 	background: white;
-	position: relative;
 	border-radius: 20px;
+}
+
+.gcard__top {
 	z-index: 1;
+	position: relative;
 }
 
 .gcard__add {
@@ -516,7 +519,10 @@ main {
 
 	position: absolute;
 	z-index: 3;
-	margin: auto;
+	left: 50%;
+	margin-left: -25px;
+	top: 50%;
+	margin-top: -25px;
 
 	cursor: pointer;
 }

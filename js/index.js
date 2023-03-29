@@ -26,16 +26,19 @@ const saveLocalStorage = (cartList) => {
 	localStorage.setItem("cart", JSON.stringify(cartList));
 };
 
-const renderProduct = ({ id, name, category, cardImg, price }) => {
+const renderProduct = ({ id, name, category, cardImg, cartImg, price }) => {
 	return `
         <div class="grid__card">
-            <button class="gcard__add" 
+            <div class="gcard__top">
+                <button class="gcard__add" 
                 data-id='${id}'
                 data-name='${name}'
                 data-price='${price}'
-                data-img='${cardImg}'><i class="fas fa-shopping-bag add-icon" title="Comprar"></i>
-            </button>
-            <img class="gcard__img" src=${cardImg} alt=${name} />
+                data-img='${cardImg}'
+                data-imgCart='${cartImg}'><i class="fas fa-shopping-bag add-icon" title="Comprar"></i>
+                </button>
+                <img class="gcard__img" src=${cardImg} alt=${name} />
+            </div>
            
             <div class="gcard__content">
                 <p class="gcard__price">$ ${price}</p>
@@ -150,7 +153,7 @@ const closeOnScroll = () => {
 	overlay.classList.remove("show-overlay");
 };
 
-//CONTENIDO CARRITO. ¿Aca agrega img y quantity?
+//CONTENIDO CARRITO. Cambiar por imagen a tamaño?
 
 const renderCartProduct = ({ id, name, img, price, quantity }) => {
 	return `
