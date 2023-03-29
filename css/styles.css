@@ -472,10 +472,12 @@ main {
 
 .discover__grid {
 	display: grid;
+
 	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-	gap: 1em;
+	grid-gap: 1em;
 	justify-content: center;
 	max-width: 100%;
+	width: 100%;
 }
 
 .grid__card {
