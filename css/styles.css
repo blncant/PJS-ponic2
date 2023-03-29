@@ -57,6 +57,7 @@ body {
 	width: 100%;
 	min-height: 4em;
 	position: fixed;
+	z-index: 100;
 }
 
 .header {
@@ -66,7 +67,7 @@ body {
 	min-height: 4em;
 	padding: 0 5%;
 
-	position: sticky;
+	position: fixed;
 	z-index: 100;
 	top: 0;
 	right: 0;
@@ -497,16 +498,9 @@ main {
 	display: flex;
 	flex-direction: column;
 	background: white;
-
-	border-radius: 20px;
-}
-
-.gcard__top {
 	position: relative;
-	outline: 2px solid green;
-
-	/* 	display: flex;
-	flex-direction: column; */
+	border-radius: 20px;
+	z-index: 1;
 }
 
 .gcard__add {
@@ -521,6 +515,7 @@ main {
 	text-align: center;
 
 	position: absolute;
+	z-index: 3;
 	margin: auto;
 
 	cursor: pointer;
@@ -543,6 +538,7 @@ main {
 
 .gcard__category {
 	font-size: 0.6em;
+	letter-spacing: 3px;
 	font-weight: 400;
 	text-transform: uppercase;
 }
@@ -553,7 +549,7 @@ main {
 }
 
 .gcard__price {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-weight: 800;
 	padding: 0.5em 0;
 	color: var(--color-orange);
@@ -561,6 +557,10 @@ main {
 
 .gcard__add:hover {
 	background-color: var(--color-blue);
+}
+
+.gcard__text {
+	font-size: 0.4em;
 }
 
 .add-icon {

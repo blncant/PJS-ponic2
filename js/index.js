@@ -29,15 +29,13 @@ const saveLocalStorage = (cartList) => {
 const renderProduct = ({ id, name, category, cardImg, price }) => {
 	return `
         <div class="grid__card">
-            <div class="gcard__top">
-			    <img class="gcard__img" src=${cardImg} alt=${name} />
-                <button class="gcard__add" 
+            <button class="gcard__add" 
                 data-id='${id}'
                 data-name='${name}'
                 data-price='${price}'
                 data-img='${cardImg}'><i class="fas fa-shopping-bag add-icon" title="Comprar"></i>
-                </button>
-            </div>
+            </button>
+            <img class="gcard__img" src=${cardImg} alt=${name} />
            
             <div class="gcard__content">
                 <p class="gcard__price">$ ${price}</p>
