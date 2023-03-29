@@ -35,7 +35,7 @@ const renderProduct = ({ id, name, category, cardImg, cartImg, price }) => {
                 data-name='${name}'
                 data-price='${price}'
                 data-img='${cardImg}'
-                data-imgCart='${cartImg}'><i class="fas fa-shopping-bag add-icon" title="Comprar"></i>
+                data-imgCart='${cartImg}'><i class="fas fa-shopping-bag add-icon" title="Agregar"></i>
                 </button>
                 <img class="gcard__img" src=${cardImg} alt=${name} />
             </div>
@@ -44,7 +44,7 @@ const renderProduct = ({ id, name, category, cardImg, cartImg, price }) => {
                 <p class="gcard__price">$ ${price}</p>
 				<h4 class="gcard__category">${category}</h4>
 				<h3 class="gcard__name">${name}</h3>
-                <p class="gcard__text">AAAA</p>
+                <p class="gcard__text">Más info</p>
 			</div>
 		</div>
     `;

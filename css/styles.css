@@ -399,28 +399,11 @@ main {
 	color: white;
 }
 
-/* .features__container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 1rem;
-} */
-
 .features__container {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
 }
-
-/* .features__card {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	background-color: rgba(255, 255, 255, 0.4);
-	padding: 30px 20px;
-	width: 100%;
-	border: 1px solid white;
-} */
 
 .features__card {
 	flex: 1 1 200px;
@@ -466,8 +449,7 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	width: 90%;
-	/* align-items: center;
-	justify-content: center; */
+
 	gap: 0.9em;
 	margin: 40px 0;
 }
@@ -490,19 +472,20 @@ main {
 
 .discover__grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 	gap: 1em;
+	justify-content: center;
+	max-width: 100%;
 }
 
 .grid__card {
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
+	flex-direction: column; */
 	background: white;
 	border-radius: 20px;
 }
 
 .gcard__top {
-	z-index: 1;
 	position: relative;
 }
 
@@ -566,7 +549,9 @@ main {
 }
 
 .gcard__text {
-	font-size: 0.4em;
+	font-size: 0.7em;
+	color: #aaadad;
+	padding: 0.2em 0;
 }
 
 .add-icon {

@@ -124,8 +124,8 @@ const productsData = [
 		name: "Rabanito",
 		category: "huerta",
 		price: 1000,
-		cardImg: "../assets/img/pexels-justyna-grochowska-9819646.jpg",
-		cartImg: "../assets/img-cart/pexels-justyna-grochowska-9819646.jpg",
+		cardImg: "../assets/img/pexels-mali-maeder-244393.jpg",
+		cartImg: "../assets/img-cart/pexels-mali-maeder-244393.jpg",
 	},
 	{
 		id: 17,
@@ -211,7 +211,7 @@ const splitProducts = (size) => {
 };
 
 const productsController = {
-	dividedProducts: splitProducts(3),
+	dividedProducts: splitProducts(4),
 	nextProductsIndex: 1,
-	productsLimit: splitProducts(3).length,
+	productsLimit: splitProducts(4).length,
 };
