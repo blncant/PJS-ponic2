@@ -34,8 +34,8 @@ const renderProduct = ({ id, name, category, cardImg, cartImg, price }) => {
                 data-id='${id}'
                 data-name='${name}'
                 data-price='${price}'
-                data-img='${cardImg}'
-                data-imgCart='${cartImg}'><i class="fas fa-shopping-bag add-icon" title="Agregar"></i>
+                data-imgCard='${cardImg}'
+                data-img='${cartImg}'><i class="fas fa-shopping-bag add-icon" title="Agregar"></i>
                 </button>
                 <img class="gcard__img" src=${cardImg} alt=${name} />
             </div>
@@ -153,7 +153,7 @@ const closeOnScroll = () => {
 	overlay.classList.remove("show-overlay");
 };
 
-//CONTENIDO CARRITO. Cambiar por imagen a tamaño?
+//CONTENIDO CARRITO
 
 const renderCartProduct = ({ id, name, img, price, quantity }) => {
 	return `
@@ -214,7 +214,7 @@ const checkCartState = () => {
 	renderCartBubble();
 };
 
-//REPASAR OPERADOR TERNARIO! RECORRE EL ARRAY CART Y RETORNA NUEVO ARRAY.
+//RECORRE EL ARRAY CART Y RETORNA NUEVO ARRAY.
 
 const addUnitToProduct = (product) => {
 	cart = cart.map((cartProduct) =>
@@ -267,7 +267,7 @@ const completeBuy = () => {
 };
 
 const deleteCart = () => {
-	completeCartAction("Desea vaciar la lista?");
+	completeCartAction("Desea vaciar la lista?", "El carrito está vacío.");
 };
 
 const cartPlusBtn = (id) => {
@@ -275,7 +275,7 @@ const cartPlusBtn = (id) => {
 	addUnitToProduct(existingProduct);
 };
 
-//??
+//
 const removeProductFromCart = ({ id }) => {
 	cart = cart.filter((product) => product.id !== id);
 	checkCartState();

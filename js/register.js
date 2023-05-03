@@ -51,9 +51,9 @@ const checkEmail = () => {
 	const email = emailInput.value.trim();
 
 	if (isEmpty(email)) {
-		showError(emailInput, "El email es obligatorio");
+		showError(emailInput, "El email es obligatorio.");
 	} else if (!isEmailValid(email)) {
-		showError(emailInput, "El email es inválido");
+		showError(emailInput, "El email es inválido.");
 	} else {
 		showSuccess(emailInput);
 		valid = true;
@@ -66,9 +66,12 @@ const checkPassword = () => {
 	const password = passwordInput.value.trim();
 
 	if (isEmpty(password)) {
-		showError(passwordInput, "La contraseña es obligatoria");
+		showError(passwordInput, "La contraseña es obligatoria.");
 	} else if (!isPasswordValid(password)) {
-		showError(passwordInput, "La contraseña debe tener al menos...");
+		showError(
+			passwordInput,
+			"La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula."
+		);
 	} else {
 		showSuccess(passwordInput);
 		valid = true;
