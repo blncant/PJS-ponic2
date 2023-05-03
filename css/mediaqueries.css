@@ -18,6 +18,11 @@
 	.header {
 		padding: 0 60px;
 	}
+
+	.cart {
+		width: 70%;
+	}
+
 	.section__text {
 		font-size: var(--fs-section-text-media);
 	}
